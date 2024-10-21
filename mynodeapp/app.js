@@ -1,5 +1,5 @@
 const express= require('express');
-const app=express();
+const app = express();
 const port=3000;
 
 // app.get("/",(req, res)=>{
@@ -26,6 +26,12 @@ app.get('/text',(req,req)=>{
 app.get('/html',(req,res)=>{
     res.send('<h1> Ini adalaah response html</h1>');
 });
+
+const mahasiswaRouter = require('./routes/mahasiswa'); // Sesuaikan path
+
+// ... konfigurasi lainnya
+
+app.use('/mahasiswa', mahasiswaRouter); // Semua rute mahasiswa akan diawali dengan /mahasiswa
 
 app.get('/json',(req,res)=>{
     res.json({message:'ini adalaah response json'});
