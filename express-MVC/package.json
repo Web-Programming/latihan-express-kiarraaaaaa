@@ -1,18 +1,13 @@
 {
-  "name": "mynodeapp",
+  "name": "express-MVC",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
- "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "start": "node app.js"  
-}
-,
-
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
   "dependencies": {
-    "express": "^4.21.0"
+    "cors": "^2.8.5"
   }
 }
